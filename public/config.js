@@ -29,57 +29,6 @@ window.CONFIG = {
       pinned: true
     },
     {
-      category: 'Communication',
-      name: 'Telegram',
-      icon: 'telegram',
-      url: 'http://t.me',
-      normalisedURL: 't.me',
-      triggers: [
-        'm',
-        'tm',
-        'tg',
-        'teleg',
-        'telega',
-        'telegram'
-      ],
-      key: 'KeyM',
-      commands: {
-        go: {
-          template: '{@}/{$}'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'radial',
-        colors: ['#29aaed', '#25a4e2'],
-        stops: [40, 100]
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Communication',
-      name: 'WhatsApp',
-      icon: 'whatsApp',
-      url: 'https://web.whatsapp.com',
-      normalisedURL: 'whatsapp.com',
-      triggers: [
-        'w',
-        'wa',
-        'wapp',
-        'wahtsapp',
-      ],
-      key: 'KeyW',
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        angle: 45,
-        colors: ['#26d347', '#58f879']
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
       category: 'Social',
       name: 'Reddit',
       triggers: [
@@ -109,67 +58,7 @@ window.CONFIG = {
       textColor: '#fff',
       pinned: true
     },
-    {
-      category: 'Programming',
-      name: 'GitHub',
-      icon: 'github',
-      url: 'https://github.com',
-      normalisedURL: 'github.com',
-      triggers: [
-        'g',
-        'git',
-        'github'
-      ],
-      key: 'KeyG',
-      commands: {
-        go: {
-          template: '{@}/{$}',
-          description: 'go to user'
-        },
-        search: {
-          template: '{@}/search?q={$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#171515'
-      },
-      textColor: '#e8e8e8',
-      pinned: true
-    },
-    {
-      category: 'Programming',
-      name: 'StackOverflow',
-      icon: 'stackoverflow',
-      url: 'https://stackoverflow.com',
-      normalisedURL: 'stackoverflow.com',
-      triggers: [
-        's',
-        'st',
-        'so',
-        'stack',
-        'stackoverflow'
-      ],
-      key: 'KeyS',
-      commands: {
-        search: {
-          template: '{@}/search?q={$}'
-        },
-        go: {
-          template: '{@}/questions/{$}',
-          description: 'go to question'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        colors: ['#e87922', '#ffbe25'],
-        stops: [0, 100]
-      },
-      textColor: '#212121',
-      pinned: true
-    },
-    {
+     {
       category: 'Programming',
       name: 'ChatGPT',
       icon: 'chatGPT',
@@ -190,61 +79,7 @@ window.CONFIG = {
       textColor: '#f7f7f7',
       pinned: true
     },
-    {
-      category: 'Other',
-      name: 'Translate',
-      icon: 'translate',
-      url: 'https://translate.google.com',
-      normalisedURL: 'translate.google.com',
-      triggers: [
-        't',
-        'translate'
-      ],
-      key: 'KeyT',
-      commands: {
-        search: {
-          template: '{@}/?text={$}',
-          description: 'translate text'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        angle: 45,
-        colors: ['#508bed', '#4654b4']
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Social',
-      name: 'Instagram',
-      triggers: [
-        'i',
-        'ig',
-        'insta',
-        'instagram'
-      ],
-      key: 'KeyI',
-      icon: 'instagram',
-      url: 'https://instagram.com',
-      normalisedURL: 'instagram.com',
-      commands: {
-        go: {
-          template: '{@}/{$}',
-          description: 'go to user'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'radial',
-        angle: 'circle at 30% 107%',
-        colors: ['#fdf497', '#fdf497', '#fd5949', '#d6249f', '#285aeb'],
-        stops: [0, 5, 45, 60, 90]
-      },
-      textColor: '#e8e8e8',
-      pinned: true
-    },
+    
     {
       category: 'Music',
       name: 'spotify',
@@ -343,60 +178,7 @@ window.CONFIG = {
       textColor: '#da0813',
       pinned: true
     },
-    {
-      category: 'Social',
-      name: 'Twitter',
-      icon: 'twitter',
-      url: 'https://twitter.com',
-      normalisedURL: 'twitter.com',
-      triggers: [
-        'tt',
-        'twt',
-        'twit',
-        'twitt',
-        'twitter'
-      ],
-      commands: {
-        search: {
-          template: '{@}/search?q={$}'
-        },
-        go: {
-          template: '{@}/{$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#1c99e6'
-      },
-      textColor: '#e8e8e8',
-      pinned: true
-    },
-    {
-      category: 'Work',
-      name: 'Linkedin',
-      icon: 'linkedin',
-      key: 'KeyL',
-      triggers: [
-        'l',
-        'lk',
-        'li',
-        'linked',
-        'linkedin'
-      ],
-      url: 'https://linkedin.com',
-      normalisedURL: 'linkedin.com',
-      commands: {
-        search: {
-          template: '{@}/search/results/all/?keywords={$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#0077b7'
-      },
-      textColor: '#fff',
-      pinned: true
-    },
+    
     {
       category: 'Communication',
       name: 'Gmail',
@@ -425,49 +207,7 @@ window.CONFIG = {
       textColor: '#e8e8e8',
       pinned: true
     },
-    {
-      category: 'Work',
-      name: 'Google Drive',
-      triggers: [
-        'gd',
-        'drive',
-        'gdrive',
-        'google',
-      ],
-      icon: 'gdrive',
-      url: 'https://drive.google.com',
-      normalisedURL: 'drive.google.com',
-      bgColor: {
-        type: 'gradient',
-        angle: 70,
-        gradientType: 'linear',
-        colors: ['#2684fc', '#00ac47', '#ffba00']
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Shopping',
-      name: 'Amazon',
-      triggers: [
-        'a',
-        'am',
-        'amz',
-        'amazon',
-      ],
-      icon: 'amazon',
-      key: 'KeyA',
-      url: 'https://www.amazon.com/',
-      normalisedURL: 'amazon.com',
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        colors: ['#f29100', '#fff'],
-        stops: [0, 80]
-      },
-      textColor: '#000',
-      pinned: true
-    },
+    
     {
       category: 'Education',
       name: 'Wikipedia',
@@ -496,73 +236,7 @@ window.CONFIG = {
       textColor: '#000',
       pinned: true
     },
-    {
-      category: 'Work',
-      name: 'Slack',
-      icon: 'slack',
-      triggers: [
-        'sl',
-        'slack'
-      ],
-      url: 'https://app.slack.com',
-      normalisedURL: 'slack.com',
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        angle: -200,
-        colors: ['#d6abb9', '#e6d7b8', '#bce2eb', '#8db0a4']
-      },
-      textColor: '#00bd6d',
-    },
-    {
-      category: 'Social',
-      name: 'VK',
-      triggers: [
-        'v',
-        'vk',
-        'vkontakte',
-      ],
-      url: 'https://vk.com',
-      normalisedURL: 'vk.com',
-      commands: {
-        go: {
-          template: '{@}/{$}',
-          description: 'go to'
-        },
-        search: {
-          template: '{@}/search?c%5Bq%5D={$}&c%5Bsection%5D=auto'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        colors: ['#0077ff', '#0033ff']
-      },
-      textColor: '#e8e8e8'
-    },
-    {
-      category: 'Search',
-      name: 'DuckDuckGo',
-      triggers: [
-        'dd',
-        'ddg',
-        'duck',
-        'duckduck',
-        'duckduckgo'
-      ],
-      url: 'https://duckduckgo.com',
-      normalisedURL: 'duckduckgo.com',
-      commands: {
-        search: {
-          template: '{@}/?q={$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#e37151'
-      },
-      textColor: '#e8e8e8'
-    },
+   
     {
       category: 'Search',
       name: 'Bing',
@@ -584,36 +258,7 @@ window.CONFIG = {
       },
       textColor: '#e8e8e8'
     },
-    {
-      category: 'Search',
-      name: 'Yandex',
-      triggers: [
-        'ya',
-        'yandex'
-      ],
-      url: 'https://ya.ru',
-      normalisedURL: 'ya.ru',
-      commands: {
-        search: {
-          template: '{@}/search/?text={$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#fc3f1d'
-      },
-      textColor: '#000'
-    },
-  ],
-  commands: [
-    {
-      type: 'search',
-      trigger: '?'
-    },
-    {
-      type: 'go',
-      trigger: '/'
-    }
+    
   ],
   engines: {
     google: {
